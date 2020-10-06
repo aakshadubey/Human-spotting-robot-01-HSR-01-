@@ -7,7 +7,7 @@
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 400px;
+  width: 300px;
   /* Form outline */
   padding: 1em;
   border: 1px solid #CCC;
@@ -20,55 +20,147 @@ ul {
   margin: 0;
 }
 
-form li + li {
-  margin-top: 1em;
+
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#ECF0F1;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#424949;
+}
+#wrapper h1 p
+{
+font-size:18px;
+}
+.form_div
+{
+width:330px;
+margin-left:320px;
+padding:10px;
+background-color:#d3b6ff;
+}
+.form_div .form_label
+{
+margin:15px;
+margin-bottom:30px;
+font-size:25px;
+font-weight:bold;
+color:black;
+text-decoration:underline;
+}
+.form_div input[type="text"],input[type="password"]
+{
+width:230px;
+height:40px;
+border-radius:2px;
+font-size:17px;
+padding-left:5px;
+border:none;
+}
+.form_div input[type="submit"]
+{
+background-color: #9932CC;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s
 }
 
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+#wrapper
+{
+width:100%;
 }
-
-input, 
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
+#wrapper h1
+{
+font-size:30px;
 }
-
-input:focus, 
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
+.form_div
+{
+width:50%;
+margin-left:25%;
+padding-left:0px;
+padding-right:0px;
 }
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
+.form_div input[type="text"],input[type="password"]
+{
+width:80%;
 }
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
+.form_div textarea
+{
+width:80%;
 }
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: .5em;
+.form_div input[type="submit"]
+{
+width:80%;
 }
-.thanks {
-   text-align : center;
-.
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+#wrapper
+{
+width:100%;
+}
+#wrapper h1
+{
+font-size:30px;
+}
+.form_div
+{
+width:60%;
+margin-left:20%;
+}
+.form_div input[type="text"],input[type="password"]
+{
+width:80%;
+}
+.form_div input[type="submit"]
+{
+width:80%;
+}
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+#wrapper
+{
+width:100%;
+}
+#wrapper h1
+{
+font-size:25px;
+}
+.form_div
+{
+width:90%;
+margin-left:5%;
+padding-left:0px;
+padding-right:0px;
+}
+.form_div input[type="text"],input[type="password"]
+{
+width:80%;
+}
+.form_div input[type="submit"]
+{
+width:80%;
+}
